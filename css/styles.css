@@ -8,6 +8,11 @@
   src: url("../fonts/BaskervilleItalicBT.woff") format("truetype");
 }
 
+@font-face {
+  font-family: "CustomFontBold";
+  src: url("../fonts/BaskervilleBoldBT.woff") format("truetype");
+}
+
 body {
   font-family: "CustomFont", sans-serif !important;
 }
@@ -85,6 +90,12 @@ body {
 }
 
 .desc-page-3 {
-    font-size: 28px;
+    font-size: 32px;
+}
+
+.title-page-4 {
+    font-size: 72px;
+    font-family: "CustomFontBold", sans-serif !important;
+    color: #623e28;
 }
 
