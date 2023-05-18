@@ -34,7 +34,7 @@ html,
     background-image: url("../img/background_header.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
   }
 
 .logo-header{
@@ -130,4 +130,14 @@ html,
     font-size: 24px;
     font-weight: 550;
     font-family: "CustomFontBold", sans-serif !important;
+  }
+
+  .text-small{
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .phone-number{
+    font-size: 22px;
+    font-family: "CustomFontMiring", sans-serif !important;
   }
