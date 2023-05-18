@@ -3,6 +3,11 @@
   src: url("../fonts/baskvl.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "CustomFontMiring";
+  src: url("../fonts/BaskervilleItalicBT.woff") format("truetype");
+}
+
 body {
   font-family: "CustomFont", sans-serif !important;
 }
@@ -38,7 +43,7 @@ body {
     color: white;
     font-size: 34px;
     padding-top: 50px;
-    line-height: 50px;
+    line-height: 1.5;
 }
 
 .learn-more {
@@ -50,5 +55,26 @@ body {
     width: 100%;
     height: 600px;
     margin-top:-50px;
+}
+
+.background-arsir{
+  height: 125vh;
+  min-height: 500px;
+  background-image: url("../img/BACKGROUND-PAGE-2.png");
+}
+
+.welcome-page-2 {
+    font-size: 56px;
+    font-family: "CustomFontMiring", sans-serif !important;
+    line-height: 1;
+}
+
+.home-page-2 {
+    font-size: 132px;
+    line-height: 1;
+}
+
+.desc-page-2 {
+    font-size: 32px;
 }
 
