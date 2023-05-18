@@ -99,3 +99,8 @@ html,
 .desc-page-4 {
     font-size: 30px;
 }
+
+.maps {
+  max-height: 100vh; 
+  width:100%;
+}
