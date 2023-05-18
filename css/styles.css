@@ -58,7 +58,7 @@ body {
 }
 
 .background-arsir{
-  height: 125vh;
+  height: 118vh;
   min-height: 500px;
   background-image: url("../img/BACKGROUND-PAGE-2.png");
 }
@@ -76,5 +76,15 @@ body {
 
 .desc-page-2 {
     font-size: 32px;
+}
+
+.title-page-3 {
+    font-size: 52px;
+    font-weight: 550;
+    font-family: "CustomFontMiring", sans-serif !important;
+}
+
+.desc-page-3 {
+    font-size: 28px;
 }
 
