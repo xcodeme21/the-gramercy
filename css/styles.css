@@ -104,3 +104,20 @@ html,
   max-height: 100vh; 
   width:100%;
 }
+
+.bg-meet-us {
+    background-image: url("../img/7_FOTO_AMBIENCE.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .bg-blue {
+    background-color: blue;
+    color:white;
+  }
+
+  .bg-green {
+    background-color: green;
+    color:white;
+  }
