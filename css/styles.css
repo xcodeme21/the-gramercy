@@ -46,10 +46,6 @@ html,
     background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
   }
 
-.logo-header{
-    width: 800px;
-}
-
 .header-title {
     color: white;
     font-size: 34px;
