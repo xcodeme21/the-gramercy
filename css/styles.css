@@ -218,6 +218,89 @@ label {
 
 /* Stil untuk layar sedang (tablet) */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .header-logo {
+    padding-top:80px;
+  }
+  .header-title{
+    font-size: 20px;
+    padding-top:100px;
+  }
+  .learn-more {
+    width: 150px;
+  }
+
+  .welcome-home {
+      width: 100%;
+      height: 300px;
+  }
+  .welcome-page-2 {
+    font-size:38px;
+  }
+  .home-page-2 {
+    font-size:70px;
+  }
+  .desc-page-2 {
+      font-size: 24px;
+      padding-top:50px;
+  }
+
+  .title-page-3 {
+      font-size: 32px;
+  }
+
+  .desc-page-3 {
+      font-size: 24px;
+      line-height: 1.5;
+  }
+
+  .title-page-4 {
+      font-size: 32px;
+  }
+
+  .desc-page-4 {
+      font-size: 24px;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+
+  .developed-by {
+    font-size: 22px;
+  }
+
+  .rows > div:not(:last-child) {
+      border-bottom: 1px solid white;
+      border-right: 0px solid white;
+  }
+
+  .text-small{
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .title-contact {
+    padding-top:30px;
+    font-size: 26px;
+  }
+
+  .header-meet-us{
+    font-size:26px;
+  }
+
+  .header-form {
+    font-size: 30px;
+  }
+
+  .bg-meet-us::before {
+      width: 100%;
+      background-color: rgba(70, 84, 94, 0.7);
+      box-shadow: none;
+  }
+
+  label {
+    font-size: 20px;
+  }
 }
 
 /* Stil untuk layar kecil (ponsel) */
@@ -241,7 +324,7 @@ label {
     font-size:32px;
   }
   .home-page-2 {
-    font-size:80px;
+    font-size:70px;
   }
   .desc-page-2 {
       font-size: 24px;
