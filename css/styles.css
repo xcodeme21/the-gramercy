@@ -445,11 +445,12 @@ input {
     height: 300px;
   }
   .logo-alsut {
-    margin-top: -50px;
+    margin-top: -120px;
     width: 300px;
   }
 
   .footer {
     font-size: 14px;
+    margin-top: -120px;
   }
 }
