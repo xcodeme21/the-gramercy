@@ -29,11 +29,11 @@ body {
 }
 
 .carousel-cell {
+  position: relative;
   width: 65%;
   min-height: 500px;
   margin-right: 10px;
 }
-
 .carousel-cell-image {
   display: block;
   max-height: 100%;
@@ -41,7 +41,29 @@ body {
   max-width: 100%;
   opacity: 0;
   -webkit-transition: opacity 0.4s;
-          transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.carousel-cell::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8) 0%, transparent 20%);
+  z-index: 1;
+}
+
+.carousel-cell::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8) 0%, transparent 20%);
+  z-index: 1;
 }
 
 /* fade in lazy loaded image */
@@ -368,6 +390,13 @@ input {
   .carousel{
     min-height: 200px;
     max-height: 350px;
+  }
+  
+  .carousel-cell::before {
+    height: 300px;
+  }
+  .carousel-cell::after {
+    height: 300px;
   }
   .top-img {
     width: 200px;
