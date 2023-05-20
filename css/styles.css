@@ -19,8 +19,8 @@ body {
   font-family: "CustomFont", sans-serif !important;
 }
 
-.black{
-  color:black;
+.black {
+  color: black;
 }
 
 .slider-img {
@@ -232,13 +232,12 @@ input {
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
 }
 
-
-  .show-mobile {
-    display :none;
-  }
-  .show-desktop {
-    display: block;
-  }
+.show-mobile {
+  display: none;
+}
+.show-desktop {
+  display: block;
+}
 
 /* Stil untuk layar berukuran besar (desktop) */
 @media screen and (min-width: 992px) {
@@ -334,10 +333,10 @@ input {
 /* Stil untuk layar kecil (ponsel) */
 @media screen and (max-width: 767px) {
   .top-img {
-  width: 200px;
+    width: 200px;
   }
   .show-mobile {
-    display :block;
+    display: block;
   }
   .show-desktop {
     display: none;
