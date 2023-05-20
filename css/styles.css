@@ -348,12 +348,8 @@ label {
       font-size: 24px;
   }
 
-  .footer {
-    font-size: 14px;
-  }
-
   .developed-by {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .rows > div:not(:last-child) {
@@ -387,6 +383,20 @@ label {
 
   label {
     font-size: 20px;
+  }
+
+  .section-mobile {
+    min-height:500px;
+    height:auto !important;
+    height:500px;
+  }
+  .logo-alsut {
+    margin-top:-50px;
+    width: 300px;
+  }
+
+  .footer {
+    font-size: 14px;
   }
 
 }
