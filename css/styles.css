@@ -207,3 +207,65 @@ label {
     padding: 10px;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
   }
+
+
+  /* Stil untuk layar berukuran besar (desktop) */
+@media screen and (min-width: 992px) {
+  .container {
+    width: 80%;
+  }
+}
+
+/* Stil untuk layar sedang (tablet) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Stil untuk layar kecil (ponsel) */
+@media screen and (max-width: 767px) {
+  .header-logo {
+    padding-top:80px;
+  }
+  .header-title{
+    font-size: 20px;
+    padding-top:100px;
+  }
+  .learn-more {
+    width: 150px;
+  }
+
+  .welcome-home {
+      width: 100%;
+      height: 300px;
+  }
+  .welcome-page-2 {
+    font-size:32px;
+  }
+  .home-page-2 {
+    font-size:80px;
+  }
+  .desc-page-2 {
+      font-size: 24px;
+      padding-top:50px;
+  }
+
+  .title-page-3 {
+      font-size: 32px;
+  }
+
+  .desc-page-3 {
+      font-size: 24px;
+      line-height: 1.5;
+  }
+
+  .title-page-4 {
+      font-size: 32px;
+  }
+
+  .desc-page-4 {
+      font-size: 24px;
+  }
+
+  .maps {
+    width:100%;
+  }
+}
