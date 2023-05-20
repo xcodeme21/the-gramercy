@@ -242,12 +242,12 @@ label {
 }
 
 .text-small {
-  font-size: 22px;
+  font-size: 14px;
   line-height: 1.4;
 }
 
 .phone-number {
-  font-size: 24px;
+  font-size: 18px;
   font-family: "CustomFontMiring", sans-serif !important;
 }
 
@@ -292,6 +292,19 @@ input {
 .show-desktop {
   display: block;
 }
+
+.section-footer {
+  height: 300px;
+}
+
+.section-contact {
+  height: 300px;
+}
+
+  .title-contact {
+    padding-top: 30px;
+    font-size: 22px;
+  }
 
 /* Stil untuk layar berukuran besar (desktop) */
 @media screen and (min-width: 992px) {
@@ -346,23 +359,9 @@ input {
     font-size: 14px;
   }
 
-  .developed-by {
-    font-size: 22px;
-  }
-
   .rows > div:not(:last-child) {
     border-bottom: 1px solid white;
     border-right: 0px solid white;
-  }
-
-  .text-small {
-    font-size: 18px;
-    line-height: 1.4;
-  }
-
-  .title-contact {
-    padding-top: 30px;
-    font-size: 26px;
   }
 
   .header-meet-us {
@@ -387,6 +386,9 @@ input {
 /* Stil untuk layar kecil (ponsel) */
 @media screen and (max-width: 767px) 
 {
+.section-contact {
+  height: 650px;
+}
   .carousel{
     min-height: 200px;
     max-height: 350px;
@@ -460,16 +462,6 @@ input {
     border-right: 0px solid white;
   }
 
-  .text-small {
-    font-size: 18px;
-    line-height: 1.4;
-  }
-
-  .title-contact {
-    padding-top: 30px;
-    font-size: 26px;
-  }
-
   .header-meet-us {
     font-size: 26px;
   }
@@ -494,12 +486,6 @@ input {
     height: 300px;
   }
   .section-about-mobile {
-    min-height: 500px;
-    height: auto !important;
-    height: 500px;
-  }
-
-  .section-mobile {
     min-height: 500px;
     height: auto !important;
     height: 500px;
