@@ -232,6 +232,14 @@ input {
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
 }
 
+
+  .show-mobile {
+    display :none;
+  }
+  .show-desktop {
+    display: block;
+  }
+
 /* Stil untuk layar berukuran besar (desktop) */
 @media screen and (min-width: 992px) {
 }
@@ -325,6 +333,13 @@ input {
 
 /* Stil untuk layar kecil (ponsel) */
 @media screen and (max-width: 767px) {
+  .show-mobile {
+    display :block;
+  }
+  .show-desktop {
+    display: none;
+  }
+
   .header-logo {
     padding-top: 80px;
   }
@@ -403,6 +418,17 @@ input {
 
   label {
     font-size: 20px;
+  }
+
+  .section-map-mobile {
+    min-height: 300px;
+    height: auto !important;
+    height: 300px;
+  }
+  .section-about-mobile {
+    min-height: 500px;
+    height: auto !important;
+    height: 500px;
   }
 
   .section-mobile {

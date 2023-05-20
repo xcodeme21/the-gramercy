@@ -12,7 +12,10 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
   </head>
 
   <body>
@@ -72,7 +75,7 @@
         </video>
       </div>
     </div>
-    <div class="section background-arsir center">
+    <div class="section background-arsir center section-about-mobile">
       <h1 class="title-page-4 pt-4">About The Gramercy</h1>
       <p class="desc-page-4 pt-4">
         There is no place like home. The Gramercy is your space to live your
@@ -94,12 +97,13 @@
       </div>
     </div>
 
-    <div class="section center">
-      <div class="my-5 text-center container-fluid">
+    <div class="section center section-about-mobile">
+      <!-- Desktop -->
+      <div class="my-5 text-center container-fluid show-desktop">
         <div class="row d-flex align-items-center">
           <div class="col-1 d-flex align-items-center justify-content-center">
             <a
-              href="#carouselExampleIndicators"
+              href="#carouselDesktopIndicators"
               role="button"
               data-slide="prev"
               class="black"
@@ -112,7 +116,7 @@
           <div class="col-10">
             <!--Start carousel-->
             <div
-              id="carouselExampleIndicators"
+              id="carouselDesktopIndicators"
               class="carousel slide pt-5"
               data-ride="carousel"
             >
@@ -130,7 +134,8 @@
                       "
                       class="col-12 col-md col-xs-4 d-flex center slider-img"
                     >
-                      <img class="top-img" src="img/5_AERA.png" width="400px" /></div>
+                      <img class="top-img" src="img/5_AERA.png" width="400px" />
+                    </div>
                     <div
                       style="
                         background-image: url('img/5_FOTO_ALCA.png');
@@ -142,7 +147,8 @@
                       "
                       class="col-12 col-md col-xs-4 d-flex center slider-img"
                     >
-                      <img class="top-img" src="img/5_ALCA.png" width="400px" /></div>
+                      <img class="top-img" src="img/5_ALCA.png" width="400px" />
+                    </div>
                     <div
                       style="
                         background-image: url('img/5_FOTO_ARMA.png');
@@ -169,7 +175,8 @@
                       "
                       class="col-12 col-md col-xs-4 d-flex center slider-img"
                     >
-                      <img class="top-img" src="img/5_ALCA.png" width="400px" /></div>
+                      <img class="top-img" src="img/5_ALCA.png" width="400px" />
+                    </div>
                     <div
                       style="
                         background-image: url('img/5_FOTO_ARMA.png');
@@ -181,7 +188,8 @@
                       "
                       class="col-12 col-md col-xs-4 d-flex center slider-img"
                     >
-                      <img class="top-img" src="img/5_ARMA.png" width="400px" /></div>
+                      <img class="top-img" src="img/5_ARMA.png" width="400px" />
+                    </div>
                     <div
                       style="
                         background-image: url('/img/5_FOTO_AERA.png');
@@ -191,7 +199,8 @@
                       "
                       class="col-12 col-md col-xs-4 d-flex center slider-img"
                     >
-                      <img class="top-img" src="img/5_AERA.png" width="400px" /></div>
+                      <img class="top-img" src="img/5_AERA.png" width="400px" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -199,7 +208,99 @@
             <!--End carousel-->
           </div>
           <div class="col-1 d-flex align-items-center justify-content-center">
-            <a href="#carouselExampleIndicators" class="black" data-slide="next">
+            <a
+              href="#carouselDesktopIndicators"
+              class="black"
+              data-slide="next"
+            >
+              <div class="carousel-nav-icon">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile -->
+      <div class="my-5 text-center container-fluid show-mobile">
+        <div class="row d-flex align-items-center">
+          <div class="col-1 d-flex align-items-center justify-content-center">
+            <a
+              href="#carouselMobileIndicators"
+              role="button"
+              data-slide="prev"
+              class="black"
+            >
+              <div class="carousel-nav-icon">
+                <i class="fas fa-arrow-left"></i>
+              </div>
+            </a>
+          </div>
+          <div class="col-10">
+            <!--Start carousel-->
+            <div
+              id="carouselMobileIndicators"
+              class="carousel slide pt-5"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div
+                      style="
+                        background-image: url('/img/5_FOTO_AERA.png');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        height: 500px;
+                        width: 100%;
+                      "
+                      class="col-12 col-md col-xs-4 d-flex center slider-img"
+                    >
+                      <img class="top-img" src="img/5_AERA.png" width="200px" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div
+                      style="
+                        background-image: url('img/5_FOTO_ALCA.png');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        height: 500px;
+                        width: 100%;
+                      "
+                      class="col-12 col-md col-xs-4 d-flex center slider-img"
+                    >
+                      <img class="top-img" src="img/5_ALCA.png" width="200px" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div
+                      style="
+                        background-image: url('/img/5_ARMA.png');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        height: 500px;
+                        width: 100%;
+                      "
+                      class="col-12 col-md col-xs-4 d-flex center slider-img"
+                    >
+                      <img class="top-img" src="img/5_ARMA.png" width="200px" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End carousel-->
+          </div>
+          <div class="col-1 d-flex align-items-center justify-content-center">
+            <a href="#carouselMobileIndicators" class="black" data-slide="next">
               <div class="carousel-nav-icon">
                 <i class="fas fa-arrow-right"></i>
               </div>
@@ -209,7 +310,7 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section section-map-mobile">
       <div class="container-full">
         <img src="img/6_MAPS-06.png" class="img-fluid maps" />
       </div>
