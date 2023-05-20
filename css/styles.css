@@ -17,6 +17,7 @@ html,
 body {
   height: 100%;
   font-family: "CustomFont", sans-serif !important;
+  scroll-behavior: smooth;
 }
 
 .black {
