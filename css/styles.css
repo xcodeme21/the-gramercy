@@ -29,6 +29,11 @@ body {
   padding-top: 50px;
 }
 
+.section-3-gif{
+  width:50%;
+  height: 400px;
+}
+
 .carousel-cell {
   position: relative;
   width: 65%;
@@ -418,6 +423,10 @@ input {
 /* Stil untuk layar kecil (ponsel) */
 @media screen and (max-width: 767px) {
 
+.section-3-gif{
+  width:100%;
+  height: auto;
+}
 .section-footer {
   height: 450px;
 }
