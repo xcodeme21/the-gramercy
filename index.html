@@ -67,9 +67,7 @@
           provides all your needs. A place to express gratitude and begin your
           story.
         </p>
-        <video width="100%" height="350" controls autoplay>
-          <source src="img/welcome-home.mov" type="video/mp4" />
-        </video>
+          <img src="img/welcome-home-2.gif" width="400" height="350"/>
       </div>
     </div>
     <div class="section background-arsir center section-about-mobile">
@@ -130,7 +128,7 @@
 
     <div class="section section-map-mobile">
       <div class="container-full">
-        <img src="img/6_MAPS-06.png" class="img-fluid maps" />
+        <img src="img/6_MAPS-06.png" class="img-fluid maps" id="maps" />
       </div>
     </div>
 
@@ -228,6 +226,50 @@
         </div>
       </div>
     </div>
+
+    <div
+      class="modal fade"
+      id="modal-map"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">Modal Title</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut diam
+              lectus, tristique non rhoncus sit amet, congue quis quam.
+              Pellentesque ornare sodales risus a vulputate. Donec vestibulum
+              ipsum et tincidunt semper. Donec semper sem vel mi tristique
+              lobortis. Morbi eleifend ipsum non malesuada hendrerit.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
   <script
     src="js/jquery-3.2.1.slim.min.js"
@@ -245,4 +287,50 @@
     crossorigin="anonymous"
   ></script>
   <script src="js/flickity.pkgd.min.js"></script>
+  <script>
+    const maps = document.getElementById("maps");
+    const modal = document.getElementById("modal-map");
+
+    maps.addEventListener("click", function (event) {
+      const clickX = event.offsetX;
+      const clickY = event.offsetY;
+      console.log(clickX, clickY);
+      
+      const region1 = { left: 59, top: 86, width: 100, height: 100 };
+      const region2 = { left: 58, top: 85, width: 100, height: 200 };
+      const region3 = { left: 56, top: 86, width: 100, height: 300 };
+      const region4 = { left: 64, top: 94, width: 100, height: 450 };
+      const region5 = { left: 539, top: 565, width: 100, height: 600 };
+      const region6 = { left: 455, top: 490, width: 400, height: 100 };
+      const region7 = { left: 461, top: 490, width: 200, height: 200 };
+
+      var title="";
+
+      if (isWithinRegion(clickX, clickY, region1)) {
+        var title = "Mall Alam Sutera";
+      } else if (isWithinRegion(clickX, clickY, region2)) {
+        var title = "Binus Alam Sutera"
+      } else if (isWithinRegion(clickX, clickY, region3)) {
+        var title = "Flavor Bliss"
+      } else if (isWithinRegion(clickX, clickY, region4)) {
+        var title = "EMC Medical Centre"
+      }
+      else if (isWithinRegion(clickX, clickY, region6)) {
+        var title = "Gran Tunnel"
+      } 
+    //    else if (isWithinRegion(clickX, clickY, region5)) {
+    //     var title = "IKEA"
+    //   } else if (isWithinRegion(clickX, clickY, region7)) {
+    //     var title = "The Gramercy Lounge"
+    //   }
+      console.log(title);
+    });
+
+    function isWithinRegion(x, y, region) {
+      const { left, top, width, height } = region;
+      return x >= left && x <= left + width && y >= top && y <= top + height;
+    }
+
+    // Add event listeners to close modals if needed
+  </script>
 </html>
