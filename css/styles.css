@@ -288,4 +288,22 @@ label {
     font-size: 26px;
   }
 
+  .header-meet-us{
+    font-size:26px;
+  }
+
+  .header-form {
+    font-size: 30px;
+  }
+
+  .bg-meet-us::before {
+      width: 100%;
+      background-color: rgba(70, 84, 94, 0.7);
+      box-shadow: none;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
 }
