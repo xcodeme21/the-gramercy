@@ -333,6 +333,9 @@ input {
 
 /* Stil untuk layar kecil (ponsel) */
 @media screen and (max-width: 767px) {
+  .top-img {
+  width: 200px;
+  }
   .show-mobile {
     display :block;
   }
@@ -435,6 +438,12 @@ input {
     min-height: 500px;
     height: auto !important;
     height: 500px;
+  }
+
+  .section-carousel-mobile {
+    min-height: 300px;
+    height: auto !important;
+    height: 300px;
   }
   .logo-alsut {
     margin-top: -50px;
