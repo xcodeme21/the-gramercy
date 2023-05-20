@@ -395,6 +395,10 @@ input {
 
 /* Stil untuk layar kecil (ponsel) */
 @media screen and (max-width: 767px) {
+
+.section-footer {
+  height: 450px;
+}
   .title-contact {
     padding-top: 20px;
   }
