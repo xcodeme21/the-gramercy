@@ -14,7 +14,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      href="css/flickity.min.css"
     />
   </head>
 
@@ -98,213 +98,34 @@
     </div>
 
     <div class="section center section-carousel-mobile">
-      <!-- Desktop -->
-      <div class="my-5 text-center container-fluid show-desktop">
-        <div class="row d-flex align-items-center">
-          <div class="col-1 d-flex align-items-center justify-content-center">
-            <a
-              href="#carouselDesktopIndicators"
-              role="button"
-              data-slide="prev"
-              class="black"
-            >
-              <div class="carousel-nav-icon">
-                <i class="fas fa-arrow-left"></i>
-              </div>
-            </a>
+      <div class="container">
+        <div
+          class="carousel"
+          data-flickity='{ "lazyLoad": 2, "initialIndex": 1 }'
+        >
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="img/5_FOTO_AERA.png"
+              alt="tulip"
+            />
+            <img class="top-img" src="img/5_AERA.png"  />
           </div>
-          <div class="col-10">
-            <!--Start carousel-->
-            <div
-              id="carouselDesktopIndicators"
-              class="carousel slide pt-5"
-              data-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row">
-                    <div
-                      style="
-                        background-image: url('/img/5_FOTO_AERA.png');
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        height: 500px;
-                        width: 100%;
-                      "
-                      class="col-12 col-md col-xs-4 d-flex center slider-img"
-                    >
-                      <img class="top-img" src="img/5_AERA.png" width="400px" />
-                    </div>
-                    <div
-                      style="
-                        background-image: url('img/5_FOTO_ALCA.png');
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        height: 500px;
-                        width: 100%;
-                      "
-                      class="col-12 col-md col-xs-4 d-flex center slider-img"
-                    >
-                      <img class="top-img" src="img/5_ALCA.png" width="400px" />
-                    </div>
-                    <div
-                      style="
-                        background-image: url('img/5_FOTO_ARMA.png');
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                      "
-                      class="col-12 col-md col-xs-4 d-flex center slider-img"
-                    >
-                      <img class="top-img" src="img/5_ARMA.png" width="400px" />
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div
-                      style="
-                        background-image: url('img/5_FOTO_ALCA.png');
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        height: 500px;
-                        width: 100%;
-                      "
-                      class="col-12 col-md col-xs-4 d-flex center slider-img"
-                    >
-                      <img class="top-img" src="img/5_ALCA.png" width="400px" />
-                    </div>
-                    <div
-                      style="
-                        background-image: url('img/5_FOTO_ARMA.png');
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        height: 500px;
-                        width: 100%;
-                      "
-                      class="col-12 col-md col-xs-4 d-flex center slider-img"
-                    >
-                      <img class="top-img" src="img/5_ARMA.png" width="400px" />
-                    </div>
-                    <div
-                      style="
-                        background-image: url('/img/5_FOTO_AERA.png');
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                      "
-                      class="col-12 col-md col-xs-4 d-flex center slider-img"
-                    >
-                      <img class="top-img" src="img/5_AERA.png" width="400px" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--End carousel-->
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="img/5_FOTO_ALCA.png"
+              alt="grapes"
+            />
+            <img class="top-img" src="img/5_ALCA.png"  />
           </div>
-          <div class="col-1 d-flex align-items-center justify-content-center">
-            <a
-              href="#carouselDesktopIndicators"
-              class="black"
-              data-slide="next"
-            >
-              <div class="carousel-nav-icon">
-                <i class="fas fa-arrow-right"></i>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mobile -->
-      <div class="my-5 text-center container-fluid show-mobile">
-        <div class="row d-flex align-items-center">
-          <div class="col-1 d-flex align-items-center justify-content-center">
-            <a
-              href="#carouselMobileIndicators"
-              role="button"
-              data-slide="prev"
-              class="black"
-            >
-              <div class="carousel-nav-icon">
-                <i class="fas fa-arrow-left"></i>
-              </div>
-            </a>
-          </div>
-          <div class="col-10">
-            <!--Start carousel-->
-            <div
-              id="carouselMobileIndicators"
-              class="carousel slide pt-5"
-              data-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row">
-                    <div
-                      style="
-                        background-image: url('/img/5_FOTO_AERA.png');
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        height: 300px;
-                        width: 100%;
-                      "
-                      class="col-12 col-md col-xs-4 d-flex center slider-img"
-                    >
-                      <img class="top-img" src="img/5_AERA.png" width="400px" />
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div
-                      style="
-                        background-image: url('img/5_FOTO_ALCA.png');
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        height: 300px;
-                        width: 100%;
-                      "
-                      class="col-12 col-md col-xs-4 d-flex center slider-img"
-                    >
-                      <img class="top-img" src="img/5_ALCA.png" width="400px" />
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div
-                      style="
-                        background-image: url('/img/5_FOTO_ARMA.png');
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        height: 300px;
-                        width: 100%;
-                      "
-                      class="col-12 col-md col-xs-4 d-flex center slider-img"
-                    >
-                      <img class="top-img" src="img/5_ARMA.png" width="400px" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--End carousel-->
-          </div>
-          <div class="col-1 d-flex align-items-center justify-content-center">
-            <a href="#carouselMobileIndicators" class="black" data-slide="next">
-              <div class="carousel-nav-icon">
-                <i class="fas fa-arrow-right"></i>
-              </div>
-            </a>
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="img/5_FOTO_ARMA.png"
+              alt="raspberries"
+            />
+            <img class="top-img" src="img/5_ARMA.png"  />
           </div>
         </div>
       </div>
@@ -419,32 +240,5 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"
   ></script>
-  <script>
-    $(document).ready(function () {
-      // Add smooth scrolling to all links
-      $("a").on("click", function (event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $("html, body").animate(
-            {
-              scrollTop: $(hash).offset().top,
-            },
-            800,
-            function () {
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            }
-          );
-        } // End if
-      });
-    });
-  </script>
+  <script src="js/flickity.pkgd.min.js"></script>
 </html>
