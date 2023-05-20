@@ -238,7 +238,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modal-title">Modal Title</h5>
+            <h5 class="modal-title" id="title-map">Modal Title</h5>
             <button
               type="button"
               class="close"
@@ -265,7 +265,6 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
@@ -290,6 +289,7 @@
   <script>
     const maps = document.getElementById("maps");
     const modal = document.getElementById("modal-map");
+    const heading = document.getElementById("title-map");
 
     maps.addEventListener("click", function (event) {
       const clickX = event.offsetX;
@@ -318,6 +318,12 @@
       else if (isWithinRegion(clickX, clickY, region6)) {
         var title = "Gran Tunnel"
       } 
+
+       if(title != ""){
+        heading.textContent = title;
+        $('#modal-map').modal();
+       }
+
     //    else if (isWithinRegion(clickX, clickY, region5)) {
     //     var title = "IKEA"
     //   } else if (isWithinRegion(clickX, clickY, region7)) {
