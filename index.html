@@ -67,7 +67,7 @@
           provides all your needs. A place to express gratitude and begin your
           story.
         </p>
-          <img src="img/welcome-home-2.gif" class="section-3-gif"/>
+        <img src="img/welcome-home-2.gif" class="section-3-gif" />
       </div>
     </div>
     <div class="section background-arsir center section-about-mobile">
@@ -295,7 +295,7 @@
       const clickX = event.offsetX;
       const clickY = event.offsetY;
       console.log(clickX, clickY);
-      
+
       const region1 = { left: 59, top: 86, width: 100, height: 100 };
       const region2 = { left: 58, top: 85, width: 100, height: 200 };
       const region3 = { left: 56, top: 86, width: 100, height: 300 };
@@ -304,26 +304,24 @@
       const region6 = { left: 455, top: 490, width: 400, height: 100 };
       const region7 = { left: 461, top: 490, width: 200, height: 200 };
 
-      var title="";
+      var title = "";
 
       if (isWithinRegion(clickX, clickY, region1)) {
         var title = "Mall Alam Sutera";
       } else if (isWithinRegion(clickX, clickY, region2)) {
-        var title = "Binus Alam Sutera"
+        var title = "Binus Alam Sutera";
       } else if (isWithinRegion(clickX, clickY, region3)) {
-        var title = "Flavor Bliss"
+        var title = "Flavor Bliss";
       } else if (isWithinRegion(clickX, clickY, region4)) {
-        var title = "EMC Medical Centre"
+        var title = "EMC Medical Centre";
+      } else if (isWithinRegion(clickX, clickY, region6)) {
+        var title = "Gran Tunnel";
       }
-      else if (isWithinRegion(clickX, clickY, region6)) {
-        var title = "Gran Tunnel"
-      } 
 
-       if(title != ""){
+      if (title != "") {
         heading.textContent = title;
-        $('#modal-map').modal();
-       }
-
+        $("#modal-map").modal();
+      }
     });
 
     function isWithinRegion(x, y, region) {
