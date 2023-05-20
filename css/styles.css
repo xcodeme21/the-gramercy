@@ -316,6 +316,23 @@ input {
   font-size: 22px;
 }
 
+.flickity-prev-next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* customize the positioning */
+}
+
+.flickity-prev-next-button.previous {
+  left: 10px;
+  margin-top:-35px; /* adjust the left position as needed */
+}
+
+.flickity-prev-next-button.next {
+  right: 10px;
+  margin-top:-35px; /* adjust the right position as needed */
+}
+
 /* Stil untuk layar berukuran besar (desktop) */
 @media screen and (min-width: 992px) {
 }
